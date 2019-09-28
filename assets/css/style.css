@@ -4,12 +4,21 @@
   box-sizing: border-box;
 }
 
+li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+}
 .navbar{
   width: 100%;
-  height: 200px;/*debug*/
   position:fixed;
   top: 0;
   z-index: 7;
+  background: white;
+  height: 50px;
 }
 
 .navbar::after{
@@ -20,30 +29,189 @@
 
 .logo{
   float: left;
-  width: 33%;/*debug*/
-  height: 200px;/*debug*/
-  background: red;
+  width: 10%;/*debug*/
+  margin-left: 10%;
 }
 
 .menu{
   float: left;
-  width: 33%;/*debug*/
-  height: 200px;/*debug*/
-  background: blue;
+  width: 65%;/*debug*/
 }
 
 .lingue{
   float: left;
-  width: 33%;/*debug*/
-  height: 200px;/*debug*/
-  background: pink;
+  width: 10%;/*debug*/
+}
+
+.hamburgermenu{
+  float: left;
+  width: 5%;
+  display: none;
 }
 
 .mainsfondo{
-  margin-top: 200px;/*debug*/
+  margin-top: 30px;
+  position: relative;
   width: 100%;
   height: 500px;
   background: url("../img/HelbizOrig.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.adv{
+  color: white;
+  font-size: 1.2em;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a.buttonstore{
+  margin-top: 5%;
+}
+
+/* blocco immagine col vecchietto  */
+
+
+
+.transport{
+  width: 100%;
+  text-align: center;
+}
+
+.descrizione{
+  width: 100%;
+  text-align: center;
+}
+.helimg img{
+  width: 50%;
+  height: auto;
+
+}
+
+.iphoneslide{
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 80px
+}
+
+.iphone{
+position: absolute;
+top: 10%;
+left: 50%;
+transform: translateX(-50%);
+max-height: 510px;
+z-index: 16;
+}
+
+
+.slideup{
+  height: 400px;
+  background-image: url("../img/HelbizBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slidedown{
+  width: 70%;
+  margin: 40px auto;
+}
+
+/*tre blocchi*/
+
+.three_blocks .first{
+  position: relative;
+  background: url("../img/Helbiz-scooter.png") no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.first .mobility{
+  text-align: center;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-3%, -50%);
+  padding: 5px;
+  color: white;
+}
+
+.first .mobility a{
+
+  color: white;
+}
+
+
+.second .app{
+  background: url("../img/HelbiZAPP.png") bottom no-repeat;
+  background-size: 530px,100%;
+  min-height: 490px;
+  margin-right: 10%;
+  margin-bottom: 5%;
+
+}
+
+.third .globe{
+background: url("../img/Cities-1500.jpg") no-repeat;
+background-size: 530px,100%;
+min-height: 490px;
+margin-right: 20px;
+margin-bottom: 5%;
+}
+
+/* blocco prefooter  */
+.prefooter{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url("../img/Social-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.family{
+  color:black;
+  width: 40%;
+  background: white;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.titlefamily{
+  text-align: center;
+  width: 100%;
+}
+
+.family .container{
+  background-color: black;
+}
+
+/* blocco footer */
+
+footer{
+background:#000000;
+}
+
+.footsup{
+  color: white;
+  padding: 5% 8%;
+  width: 100%;
+  border-bottom: 2px solid grey;
+
+}
+
+.footdown{
+  color: white;
+  padding: 4% 8%;
+  width: 100%;
+  border-bottom: 2px solid grey;
+
 }
